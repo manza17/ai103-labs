@@ -47,7 +47,7 @@ powershell -ExecutionPolicy Bypass -File scripts\cleanup.ps1 -ResourceGroup rg-a
 
 | # | Lab | Módulo de Microsoft Learn | Grupo de recursos | Limpieza verificada |
 |---|-----|---------------------------|-------------------|---------------------|
-| 01 | [Chat app](labs/01-chat-app) | [Desarrollar una app de chat de IA generativa con Foundry](https://learn.microsoft.com/es-es/training/modules/foundry-sdk/) | `rg-ai103-lab01` | ☐ |
+| 01 | [Chat app](labs/01-chat-app) | [Desarrollar una app de chat de IA generativa con Foundry](https://learn.microsoft.com/es-es/training/modules/foundry-sdk/) | `rg-ai103-lab01` | ✅ 23/10/2026 |
 
 ## Seguridad
 
