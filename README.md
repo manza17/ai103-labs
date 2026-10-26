@@ -58,6 +58,7 @@ powershell -ExecutionPolicy Bypass -File scripts\cleanup.ps1 -ResourceGroup rg-a
 |---|-----|---------------------------|-------------------|---------------------|
 | 01 | [Chat app](labs/01-chat-app) | [Desarrollar una app de chat de IA generativa con Foundry](https://learn.microsoft.com/es-es/training/modules/foundry-sdk/) | `rg-ai103-lab01` | ✅ 23/10/2026 |
 | 02 | [Tools app](labs/02-tools-app) | [Desarrollar apps de IA generativa que usan herramientas](https://learn.microsoft.com/es-es/training/modules/use-generative-ai-tools/) | `rg-ai103-lab02` | ✅ 26/10/2026 |
+| 03 | [Fine-tuning](labs/03-fine-tuning) | [Optimizar el rendimiento de modelos de IA generativa](https://learn.microsoft.com/es-es/training/modules/optimize-generative-ai-model-performance/) | No ejecutado (decisión de costos; ver notas) | No aplica |
 
 ## Seguridad
 
