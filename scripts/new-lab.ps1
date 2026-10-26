@@ -1,8 +1,8 @@
 ﻿<#
 .SYNOPSIS
-  Crea la carpeta de un lab nuevo con Python 3.13, su venv y la plantilla de notas.
+  Crea la carpeta de un lab nuevo con la plantilla de notas (usa el venv compartido de la raíz).
 .EXAMPLE
-  powershell -ExecutionPolicy Bypass -File scripts\new-lab.ps1 -Name 02-chat-tools
+  powershell -ExecutionPolicy Bypass -File scripts\new-lab.ps1 -Name 03-optimizar
 #>
 param(
     [Parameter(Mandatory = $true)]
@@ -19,12 +19,7 @@ if (Test-Path $labDir) {
 }
 
 New-Item -ItemType Directory -Path $labDir | Out-Null
-Set-Content -Path (Join-Path $labDir ".python-version") -Value "3.13"
-Copy-Item (Join-Path $root "labs\01-chat-app\NOTES.md") (Join-Path $labDir "NOTES.md")
-
-Push-Location $labDir
-uv venv --python 3.13
-Pop-Location
+Copy-Item (Join-Path $root "scripts\NOTES-template.md") (Join-Path $labDir "NOTES.md")
 
 Write-Host "Lab creado en $labDir" -ForegroundColor Green
-Write-Host "Siguiente: completar NOTES.md y agregar la fila en el README." -ForegroundColor Cyan
+Write-Host "Siguiente: copiar los archivos del lab, instalar su requirements.txt en el venv de la raíz y agregar la fila en el README." -ForegroundColor Cyan

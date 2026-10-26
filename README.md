@@ -2,7 +2,7 @@
 
 Labs prácticos de la certificación **Microsoft AI-103: Azure AI Apps and Agents Developer Associate**, hechos sobre **Microsoft Foundry** con Python.
 
-Cada lab vive en su propia carpeta dentro de `labs/`, con su entorno virtual aislado (Python 3.13) y sus notas.
+Cada lab vive en su propia carpeta dentro de `labs/`, con su código y sus notas. Todos comparten un único entorno virtual en la raíz del repo (Python 3.13). Si un lab necesitara versiones de paquetes que choquen, se le crea un venv propio solo a ese lab.
 
 ## Requisitos
 
@@ -29,13 +29,22 @@ Crear un lab nuevo:
 powershell -ExecutionPolicy Bypass -File scripts\new-lab.ps1 -Name 02-chat-tools
 ```
 
-Activar el entorno de un lab:
+Entorno virtual (una sola vez, en la raíz):
 
 ```powershell
-cd labs\01-chat-app
+uv venv --python 3.13
 .venv\Scripts\activate
-uv pip install -r requirements.txt
 ```
+
+Instalar las dependencias de un lab (con el venv activo):
+
+```powershell
+uv pip install -r labs\02-tools-app\requirements.txt
+cd labs\02-tools-app
+python tools-app.py
+```
+
+Usar la terminal de VS Code o PowerShell común: PowerShell ISE no soporta programas interactivos.
 
 Limpiar al terminar (borra el grupo de recursos y verifica):
 
