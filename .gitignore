@@ -9,6 +9,9 @@ venv/
 __pycache__/
 *.pyc
 
+# Doc personal
+/CU-AI103/*
+
 # Editor y sistema
 .vscode/
 .DS_Store
