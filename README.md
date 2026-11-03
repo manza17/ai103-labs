@@ -62,6 +62,7 @@ powershell -ExecutionPolicy Bypass -File scripts\cleanup.ps1 -ResourceGroup rg-a
 | 04 | [Guardrails](labs/04-guardrails) | [Implementar una solución de IA generativa responsable en Foundry](https://learn.microsoft.com/es-es/training/modules/responsible-ai-studio/) | `rg-ai103-lab04` | ✅ 28/10/2026 |
 | 05 | [Agente portal + VS Code](labs/05-agent-portal-vscode) | [Desarrollar agentes de IA con Microsoft Foundry y Visual Studio Code](https://learn.microsoft.com/es-es/training/modules/develop-ai-agents-azure-vs-code/) | `rg-ai103-lab05` | ✅ 30/10/2026 |
 | 06 | [Custom tools](labs/06-agent-custom-tools) | [Integrar herramientas personalizadas en el agente](https://learn.microsoft.com/es-es/training/modules/build-agent-with-custom-tools/) | `rg-ai103-lab06` | ✅ 02/11/2026 |
+| 07 | [MCP](labs/07-mcp-integration) | [Integrar herramientas de MCP con agentes de Azure AI](https://learn.microsoft.com/es-es/training/modules/connect-agent-to-mcp-tools/) | `rg-ai103-lab07` | ✅ 03/11/2026 |
 
 ## Seguridad
 
