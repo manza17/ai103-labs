@@ -64,6 +64,7 @@ powershell -ExecutionPolicy Bypass -File scripts\cleanup.ps1 -ResourceGroup rg-a
 | 06 | [Custom tools](labs/06-agent-custom-tools) | [Integrar herramientas personalizadas en el agente](https://learn.microsoft.com/es-es/training/modules/build-agent-with-custom-tools/) | `rg-ai103-lab06` | ✅ 02/11/2026 |
 | 07 | [MCP](labs/07-mcp-integration) | [Integrar herramientas de MCP con agentes de Azure AI](https://learn.microsoft.com/es-es/training/modules/connect-agent-to-mcp-tools/) | `rg-ai103-lab07` | ✅ 03/11/2026 |
 | 08 | [Foundry IQ](labs/08-foundry-iq) | [Crear agentes de IA mejorados con conocimiento con Foundry IQ](https://learn.microsoft.com/es-es/training/modules/introduction-foundry-iq/) | `rg-ai103-lab08` | ✅ 03/11/2026 |
+| 09 | [Workflows](labs/09-workflows) | [Get started with building agent-driven workflows using Microsoft Foundry](https://learn.microsoft.com/en-us/training/modules/build-agent-workflows-microsoft-foundry/) | `rg-ai103-lab09` | ✅ 06/11/2026 |
 
 ## Seguridad
 
